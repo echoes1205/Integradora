@@ -1,8 +1,33 @@
-
+.nav{
+    background-color: #000000;
+}
 .container .is-primary .panel-heading {
     background-color: #4572FF;
 }
-
 .button.is-primary{
     background-color: #4572FF;
+}
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column.is-three-fifths, .column.is-three-fifths-tablet {
+    flex: none;
+    width: 150%;
+    margin-top:40px;
+    background-color:#F6F8FF;
+    color:#000000;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    padding: 20px;
+    height: 400px;
+}
+.columns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    font-size: 23px;
+    text-align: center;
 }
