@@ -1,3 +1,6 @@
+.navbar-item img {
+    max-height: 3.95rem;
+}
 .nav{
     background-color: #000000;
 }
@@ -7,10 +10,26 @@
 .button.is-primary{
     background-color: #4572FF;
 }
+.container{
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    align-items: center;
+}
 .center-div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+p.panel-heading{
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: .75em 1em;
+    text-align: center;
+    background-color: #F6F8FF;
 }
 .column.is-three-fifths, .column.is-three-fifths-tablet {
     flex: none;
@@ -30,4 +49,27 @@
 .column{
     font-size: 23px;
     text-align: center;
+}
+.registrocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75em 1em;
+}
+.registropcontainer{
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #F6F8FF;
+    color: #000000;
+}
+.contenedor{
+    background-color: #F6F8FF;
+    color: #000000;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+    width: 700px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
