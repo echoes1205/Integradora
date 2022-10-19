@@ -1,3 +1,9 @@
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
 .navbar-item img {
     max-height: 3.95rem;
 }
@@ -72,4 +78,33 @@ p.panel-heading{
     width: 700px;
     margin-left: 25%;
     margin-right: 25%;
+}
+.foco{
+    background-color: #9aaeec;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    font-size: 1rem;
+    padding: 20px;
+    width: 10%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+.puerta{
+    background-color: #9aaeec;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 10%;
+    height: 20%;
+    margin-left: 25px;
+}
+.botonPuerta{
+    background-color: red;
+    max-width: 50px;
+    max-height: 20px;
 }
