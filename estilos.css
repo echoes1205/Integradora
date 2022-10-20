@@ -11,7 +11,7 @@ body {
     background-color: #000000;
 }
 .container .is-primary .panel-heading {
-    background-color: #4572FF;
+    background-color: #383838;
 }
 .button.is-primary{
     background-color: #4572FF;
@@ -33,9 +33,18 @@ p.panel-heading{
     font-size: 1.25em;
     font-weight: 700;
     line-height: 1.25;
-    padding: .75em 1em;
-    text-align: center;
+    padding: .85em 1.55em;
+    text-align: left;
     background-color: #F6F8FF;
+}
+.panel{
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    font-size: 1rem;
+    background-color: #F6F8FF;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 25%;
 }
 .column.is-three-fifths, .column.is-three-fifths-tablet {
     flex: none;
@@ -79,8 +88,11 @@ p.panel-heading{
     margin-left: 25%;
     margin-right: 25%;
 }
+hr{
+    background-color: #dce5ff;
+}
 .foco{
-    background-color: #9aaeec;
+    background-color: #fffFFF;
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     font-size: 1rem;
@@ -89,10 +101,10 @@ p.panel-heading{
     height: 20%;
     align-items: center;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 .puerta{
-    background-color: #9aaeec;
+    background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     font-size: 1rem;
@@ -101,10 +113,36 @@ p.panel-heading{
     padding: 20px;
     width: 10%;
     height: 20%;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 .botonPuerta{
-    background-color: red;
-    max-width: 50px;
-    max-height: 20px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: rgb(212, 226, 233);
+    box-shadow: 0 0.5em 1em -0.125em rgb(138 138 138 / 30%), 0 0 0 1px rgb(138 138 138 / 1%);
+    padding: 25px;
+    padding-top: 25px;
+    float: right;
+    margin-right: 3.3%;
+    margin-top:1%;
+}
+.textoEstado{
+    padding-top: 30px;
+    font-weight:bolder;
+    font-size: 15.5px;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.textoLampara{
+    font-weight:bolder;
+    text-align: left;
+    padding-left: 77px;
+}
+
+.textoPuerta{
+    font-weight:bolder;
+    text-align: left;
+    padding-left: 83px;
 }

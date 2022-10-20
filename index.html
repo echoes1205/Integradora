@@ -56,25 +56,46 @@
       <div class="container">
         <article class="panel is-primary">
           <p class="panel-heading">
-            Dispositivos
+            Dispositivos disponibles
           </p>
           <br>
 
-          <div class="foco"> 
-            <input id="switchExample" type="checkbox" name="switchExample" class="switch" onclick="getinput()">
-              <label for="switchExample">Foco sala</label>
-          </div>
+          <button class="botonPuerta" input id="switchExample"  onclick="getinput()" type="estado">
+            <img src=encendido.png> 
+            <p class="textoEstado">
+              ON/OFF
+            </p>
+          </button>
           <br>
           
-          <div class="puerta"> 
-            <input id="switchExample" type="checkbox" name="switchExample" class="switch" onclick="getinput()">
-              <label for="switchExample">Puerta habitacion</label>
+
+          <div class="foco"> 
+            <img src="foco.png">
           </div>
-              <br>
-               
+          <br>
+            <p class="textoLampara">Lámpara</p>
+
+            <hr>
+          <button class="botonPuerta" input id="switchExample" onclick="getinput()" type="estado">
+            <img src=candao1.png>
+            <p class="textoEstado">
+              Abrir/Cerrar 
+            </p>
+          </button>
+          <br>
+
+            <div class="puerta">
+              <img src="puerta1.png">
             </div>
+            <br>
+            <p class="textoPuerta">Puerta</p>
+            <br>
+           
+          
+           
         </article>
       </div>
+            
         
 
 </body>
