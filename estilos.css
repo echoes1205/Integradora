@@ -146,3 +146,95 @@ hr{
     text-align: left;
     padding-left: 83px;
 }
+h1{
+    text-align: left;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+.nosotros{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 95px;
+    padding-right: 95px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.nosotros img{
+    width: 35%;
+    float: right;
+    padding:15px;
+}
+ul{
+    list-style:disc;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+
+
+
+
+
+
+.slider-text {
+    position: absolute;
+    right: 0;
+    bottom: 0
+  }
+  
+#slider .card-content{
+    max-width: 50%;
+  }
+  
+#slider{
+    overflow: hidden;
+  }
+  
+@media screen and (max-width: 1023px) {
+    #slider .card-content{
+      display: none;
+    }
+  }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.item-slide img {
+  max-width: 1200px;
+}
+
+.caption-container {
+  color: white;
+}
