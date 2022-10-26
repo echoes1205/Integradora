@@ -1,5 +1,9 @@
+html{
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-borroso-oscuro-abstracto-color-textura-suave-degradado-patron-sitio-web-brillante-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-82972.jpg?w=996&t=st=1666755898~exp=1666756498~hmac=f01a78133537ad0b0b5ab9ab2f110ceef5e2f56d531c6a89e1be301f5c15fecd");
+
+}
 body {
-    color: #4a4a4a;
+    color: white;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -45,6 +49,7 @@ p.panel-heading{
     width: 90%;
     margin-left: 5%;
     margin-right: 25%;
+    color: black;
 }
 .column.is-three-fifths, .column.is-three-fifths-tablet {
     flex: none;
@@ -149,10 +154,12 @@ hr{
 h1{
     text-align: left;
     font-size: 30px;
+    font-weight:bolder;
 }
 h2{
     text-align: center;
     font-size: 25px;
+    font-weight:bold;
 }
 .nosotros{
     padding-top: 30px;
