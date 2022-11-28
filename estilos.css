@@ -1,6 +1,6 @@
 html {
-    background-image: url("https://github.com/echoes1205/Integradora/blob/main/background.PNG?raw=true");
-    background-repeat: round;
+    background-image: url("wallpaper.jpg");
+    background-repeat: inherit;
 }
 
 body {
@@ -307,6 +307,13 @@ ul {
 
 .column h1 {
     text-align: center;
+}
+.acceder{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 95px;
+    padding-right: 95px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 840px) {

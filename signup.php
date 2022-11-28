@@ -26,7 +26,8 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="estilos.css">
 <script type="text/javascript" src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
 
 <title>Registro</title>
 </head>
@@ -55,7 +56,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="nosotros.html">
+        <a class="navbar-item" href="nosotros.php">
           Nosotros
         </a>
 
