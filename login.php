@@ -1,21 +1,30 @@
 <?php
-session_start();
 
-require 'database.php';
+  session_start();
 
-if (isset($_SESSION['user_id'])) {
-  $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
-  $records->bindParam(':id', $_SESSION['user_id']);
-  $records->execute();
-  $results = $records->fetch(PDO::FETCH_ASSOC);
-
-  $user = null;
-
-  if (count($results) > 0) {
-    $user = $results;
+  if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
   }
-}
+  require 'database.php';
+
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: micasa.php");
+    } else {
+      $message = 'Sorry, those credentials do not match';
+    }
+  }
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -27,8 +36,24 @@ if (isset($_SESSION['user_id'])) {
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="estilos.css">
   <script type="text/javascript" src="script.js"></script>
-
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <title>Inicio de sesión</title>
 
@@ -39,7 +64,7 @@ if (isset($_SESSION['user_id'])) {
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.php">
-        <img src="https://github.com/echoes1205/Integradora/blob/main/logocasa.PNG?raw=true">
+      <img src="logocasa.png">
       </a>
 
 
@@ -57,11 +82,8 @@ if (isset($_SESSION['user_id'])) {
           Nosotros
         </a>
 
-        <a class="navbar-item" href="micasa.html">
+        <a class="navbar-item" href="micasa.php">
           Mi casa
-        </a>
-        <a class="navbar-item" href="dispositivos.html">
-          Dispositivos
         </a>
 
         <a class="navbar-item" href="historia.php">
@@ -110,6 +132,7 @@ if (isset($_SESSION['user_id'])) {
               <a class="button is-light" href="login.php">
                 Iniciar sesión
               </a>
+           
               </element>
             </div>
           </div>
@@ -134,7 +157,7 @@ if (isset($_SESSION['user_id'])) {
 
           <input name="password" type="password" placeholder="Ingresa tu contraseña">
 
-          <input type="submit" value="Submit">
+          <input type="submit" value="Iniciar">
         </form>
       </div>
     </div>

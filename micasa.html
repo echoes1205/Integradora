@@ -8,7 +8,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="estilos.css">
   <script type="text/javascript" src="script.js"></script>
-
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <title>Mi casa</title>
 
@@ -18,7 +34,7 @@
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="index.php">
+      <a class="navbar-item" href="micasa.php">
         <img src="https://github.com/echoes1205/Integradora/blob/main/logocasa.PNG?raw=true">
       </a>
 
@@ -35,7 +51,7 @@
           Nosotros
         </a>
 
-        <a class="navbar-item" href="micasa.html">
+        <a class="navbar-item" href="micasa.php">
           Mi casa
         </a>
 
@@ -49,11 +65,8 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary" href="signup.php">
-              <strong>Registrarse</strong>
-            </a>
-            <a class="button is-light" href="login.php">
-              Iniciar sesión
+            <a class="button is-primary" href="logout.php">
+              <strong>Cerrar sesión</strong>
             </a>
           </div>
         </div>
@@ -70,11 +83,12 @@
       </p>
       <br>
 
-      <button class="botonPuerta" input id="switchExample" onclick="getinput()" type="estado">
+      <a class="botonPuerta" input id="switchExample" onclick="getinput()" type="estado" href="lamparastoggle.php">
         <img src=encendido.png>
-        <a href="lamparastoggle.php">o</a>
+      </a>
 
-      </button>
+
+
       <br>
 
 
@@ -84,32 +98,27 @@
       <br>
       <div class="enunciados">
         <p>Foco</p>
-        <p>On/Off</p>
+
       </div>
 
 
 
       <hr>
-      <button class="botonPuerta" input id="switchExample" onclick="getinput()" type="estado">
-        <img src=candao1.png>
-        <a href="puertastoggle.php">o</a>
 
-      </button>
-      <br>
 
+      <a class="botonPuerta" input id="switchExample" onclick="getinput()" type="estado" href="puertastoggle.php">
+        <img src="candao1.png">
+      </a>
 
       <div class="puerta">
         <img src="puerta1.png">
       </div>
+
       <br>
       <div class="enunciados">
         <p>Puerta</p>
-        <p>Abrir/Cerrar</p>
       </div>
       <br>
-
-
-
     </article>
 
 

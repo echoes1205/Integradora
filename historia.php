@@ -1,6 +1,5 @@
-
 <?php
-  session_start();
+    session_start();
 
   require 'database.php';
 
@@ -26,7 +25,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"/>
-
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <script type="text/javascript" src="script.js"></script>
     
@@ -36,8 +52,8 @@
 <body>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="index.php">
-            <img src="https://github.com/echoes1205/Integradora/blob/main/logocasa.PNG?raw=true">
+          <a class="navbar-item" href="historia.php">
+            <img src="logocasa.png">
           </a>
     <?php if(!empty($user)): ?>      
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -53,11 +69,8 @@
               Nosotros
             </a>
 
-            <a class="navbar-item" href="micasa.html">
+            <a class="navbar-item" href="micasa.php">
               Mi casa
-            </a>
-            <a class="navbar-item" href="dispositivos.html">
-              Dispositivos
             </a>
             
             <a class="navbar-item" href="historia.php">
@@ -122,7 +135,8 @@
           <li> 1951: Con casi medio siglo de evolución, los electrodomésticos se especializaban cada vez en hacer todo tipo de tareas. Fue durante este año cuando se inventa y populariza la cafetera eléctrica. Así pues el alcance de los electrodomésticos sale de casa y empieza a expandirse en oficinas, restaurantes, negocios, etc.</li>
         </p>
       </div>
-    <?php else: ?>     
+    <?php else: ?>
+      
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

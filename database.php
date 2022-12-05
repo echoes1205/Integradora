@@ -2,7 +2,7 @@
 
 $server = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'toringo12';
 $database = 'php_login_database';
 
 try {

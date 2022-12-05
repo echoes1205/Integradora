@@ -26,7 +26,24 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="estilos.css">
 <script type="text/javascript" src="script.js"></script>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 
 <title>Registro</title>
@@ -36,13 +53,13 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
   <?php if (!empty($message)): ?>
   <p>
-    <<= $message ?>
+    Usuario registrado
   </p>
   <?php endif; ?>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.php">
-        <img src="https://github.com/echoes1205/Integradora/blob/main/logocasa.PNG?raw=true">
+      <img src="logocasa.png">
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -52,7 +69,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
       </a>
     </div>
 
-    
+
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
@@ -65,21 +82,21 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
         </a>
       </div>
 
-    
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" href="signup.php">
-            <strong>Registrarse</strong>
-          </a>
-          <a class="button is-light" href="login.php">
-            Iniciar sesión
-          </a>
-          </element>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="signup.php">
+              <strong>Registrarse</strong>
+            </a>
+            <a class="button is-light" href="login.php">
+              Iniciar sesión
+            </a>
+            </element>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </nav>
   <br>
@@ -87,16 +104,16 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
   <div class="registrocontainer">
     <div class="columns">
       <div class="column is-three-fifths">
-      
-          <h1>Registro</h1>
-          <form action="signup.php" method="POST">
-            <input name="email" type="text" placeholder="Ingresa tu email">
-            <input name="password" type="password" placeholder="Ingresa tu contraseña">
-            <input name="confirm_password" type="password" placeholder="Confirma tu contraseña">
-            <input type="submit" value="Registrar">
-          </form>
-  
-       
+
+        <h1>Registro</h1>
+        <form action="signup.php" method="POST">
+          <input name="email" type="text" placeholder="Ingresa tu email">
+          <input name="password" type="password" placeholder="Ingresa tu contraseña">
+          <input name="confirm_password" type="password" placeholder="Confirma tu contraseña">
+          <input type="submit" value="Registrar">
+        </form>
+
+
       </div>
     </div>
   </div>

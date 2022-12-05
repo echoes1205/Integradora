@@ -4,7 +4,7 @@
     $username = "root";
     $password = "toringo12";
     $dbname = "pruebas";
-    
+
     $conn = new mysqli($servername, $username, $password, $dbname);
     if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -19,9 +19,9 @@
             while($row = $result->fetch_assoc()) {
     
             if ($row["ESTADO"]=='ON') {
-                toggle('OFF');
+                return toggle('OFF');
             }else{
-                toggle('ON');
+                return toggle('ON');
             }
     
         }
@@ -29,9 +29,8 @@
         echo "0 results";
         }
     $conn->close();
-    header("location: ./micasa.php");
 
-   
+
 
 
     function toggle($status){
@@ -40,8 +39,5 @@
         mysqli_select_db($conexion, "pruebas");
         $consulta = mysqli_query($conexion, "UPDATE `lamparas` SET `ESTADO`= '$status'  WHERE ID_LAMPARA='L001'");
     }
-     echo "<a href='micasa.php'> Volver </a>"
 
     ?>
-   
-    

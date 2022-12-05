@@ -133,6 +133,7 @@ hr {
     width: 105px;
     height: 115px;
     align-items: center;
+    
     justify-content: center;
     margin-left: 40px;
 }
@@ -302,7 +303,7 @@ ul {
     padding-left: 65px;
     font-weight: bolder;
     text-align: inherit;
-    padding-right: 50px;
+    padding-right: 56px;
 }
 
 .column h1 {
@@ -315,6 +316,20 @@ ul {
     padding-right: 95px;
     text-align: justify;
 }
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }
 
 @media screen and (max-width: 840px) {
     .nosotros {
@@ -332,6 +347,7 @@ ul {
     #slider {
         width: 300px;
         height: 200px;
+        
     }
 
     .card {
@@ -363,12 +379,12 @@ ul {
         display: flex;
         align-items: flex-start;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: row;
-        padding-left: 30px;
         font-weight: bolder;
         text-align: inherit;
-        padding-right: 20px;
+        padding-right: 44px;
+        padding-left: 70px;
     }
 
     .column.is-three-fifths,
@@ -395,8 +411,8 @@ ul {
     }
 
     .botonPuerta {
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
         border-radius: 50%;
         border-color: transparent;
         background-color: rgb(212, 226, 233);
@@ -408,8 +424,23 @@ ul {
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
-        margin-top: 29px;
         flex-direction: column;
     }
+    .acceder{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: justify;
+    }
+     .foco{
+        margin-top: -25px;
+    }
+    .puerta{
+        margin-top: -25px;
+    }
+
+
 }
+
 
